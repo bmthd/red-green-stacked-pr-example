@@ -5,4 +5,4 @@ const TAX_RATE = 1.1;
  * 仕様上、1円未満は切り捨てる。
  */
 export const toTaxIncluded = (price: number): number =>
-  Math.round(price * TAX_RATE);
+  Math.floor(price * TAX_RATE);
